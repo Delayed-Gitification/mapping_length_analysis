@@ -39,8 +39,8 @@ def write_dict(d, name, d2={}):
         df['fraction_aligned'] = df['n_bam'] / df['n']
     
     df = df.sort_values(by=['length'])
-    print("writing to "+ name + ".csv")
-    df.to_csv(name+'.csv', index=False)
+    print("writing to " + name)
+    df.to_csv(name, index=False)
 
 
 
